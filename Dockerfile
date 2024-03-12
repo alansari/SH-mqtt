@@ -8,6 +8,6 @@ RUN apt-get update && apt-get install -y \
 
 COPY control-mqtt.sh /control-mqtt.sh
 
-RUN chmod +x /subscribe-mqtt.sh
+RUN chmod +x /control-mqtt.sh
 
-ENTRYPOINT ["/subscribe-mqtt.sh"]
+ENTRYPOINT ["/control-mqtt.sh"]
